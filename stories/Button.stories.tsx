@@ -1,12 +1,12 @@
 import React from 'react';
 import {ComponentMeta, ComponentStory} from '@storybook/react';
-import {OniButton} from '../src'
+import {Button} from '../src'
 
 export default {
     title: 'Componentes/OniButton',
-    component: OniButton
-} as ComponentMeta<typeof OniButton>
+    component: Button
+} as ComponentMeta<typeof Button>
 
-const Template: ComponentStory<typeof OniButton> = () => <OniButton />
+const Template: ComponentStory<typeof Button> = () => <Button />
 
 export const Primary = Template.bind({})

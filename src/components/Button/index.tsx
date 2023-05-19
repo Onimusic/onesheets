@@ -12,11 +12,11 @@ const StyledButton = styled.button`
     transition: .3s ease-in-out;
     &:hover {
         background-color: #005D8F;
-        border: solid 1px #0092E0;
+        border: solid 1px #005D8F;
     }
 `
 
-export const OniButton = () => {
+export const Button = () => {
     return(
         <StyledButton>Clique Aqui!</StyledButton>
     )
