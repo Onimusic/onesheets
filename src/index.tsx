@@ -17,3 +17,4 @@ export const Thing: FC<Props> = ({ children }) => {
 export * from './components/Button'
 export * from './components/Card'
 export * from './components/Badges'
+export * from './components/Input'

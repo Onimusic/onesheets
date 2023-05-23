@@ -30,7 +30,6 @@ const StyledButton = styled.button<ButtonProps>`
         }
     
   }};
-    color: #121214;
   border: solid 2px ${(props) => {
     switch (props.color) {
       case 'primary':
@@ -47,6 +46,7 @@ const StyledButton = styled.button<ButtonProps>`
         return '#0092E0';
     }
   }};
+  color: #121214;
   border-radius: 0.5rem;
   padding: 0.875rem 1.125rem;
   font-size: 1rem;
