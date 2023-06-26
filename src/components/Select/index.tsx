@@ -15,8 +15,28 @@ export interface SelectProps {
   onChange?: () => void;
 }
 
+export const CustomSelect = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  position: relative;
+  font-family: Arial;
+
+  label {
+    font-weight: bold;
+  }
+
+  span {
+    font-size: 12px;
+    color: grey;
+  }
+`;
+
 export const StyledSelect = styled.select<SelectProps>`
   font-family: sans-serif;
+  max-width: 300px;
+  padding: 8px 0;
+  
 `;
 
 export const Select = ({
@@ -28,23 +48,21 @@ export const Select = ({
   onChange,
 }: SelectProps) => {
   return (
-    <>
-      <label>
-        {label}
-        <StyledSelect
-          placeholder={placeholder}
-          onChange={onChange}
-          status={status}
-          options={options}
-        >
-          {options.map((option, index) => (
-            <option key={index} value={option.value}>
-              {option.label}
-            </option>
-          ))}
-        </StyledSelect>
-        <span>{helpText}</span>
-      </label>
-    </>
+    <CustomSelect>
+      <label>{label}</label>
+      <StyledSelect
+        placeholder={placeholder}
+        onChange={onChange}
+        status={status}
+        options={options}
+      >
+        {options.map((option, index) => (
+          <option key={index} value={option.value}>
+            {option.label}
+          </option>
+        ))}
+      </StyledSelect>
+      <span>{helpText}</span>
+    </CustomSelect>
   );
 };
