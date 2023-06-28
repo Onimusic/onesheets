@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export interface ButtonProps {
+interface ButtonProps extends React.HTMLProps<HTMLButtonElement> {
     text?: string;
     type?: 'normal' | 'bordered';
     color?: 'primary' | 'secondary' | 'success' | 'error' | 'warning';
