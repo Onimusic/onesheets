@@ -1,8 +1,7 @@
 import React, { FC } from 'react';
 import styled, {DefaultTheme} from 'styled-components';
 
-
-export interface ButtonProps extends React.HTMLProps<HTMLButtonElement> {
+export interface ButtonProps {
   text?: string;
   type?: 'normal' | 'bordered';
   color?: 'primary' | 'secondary' | 'success' | 'error' | 'warning';
@@ -97,7 +96,7 @@ const StyledButton = styled.button<ButtonProps & StyledButtonProps>`
   }
 `
 
-export const Button: FC<ButtonProps> = ({ text, type='normal', onClick, color = 'primary',}: ButtonProps) => {
+export function Button({ text, type='normal', onClick, color = 'primary',}: ButtonProps){
     return (
       <StyledButton onClick={onClick} color={color as any | string} type={type as any}>
         {text}
