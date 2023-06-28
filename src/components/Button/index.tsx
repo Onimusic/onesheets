@@ -92,7 +92,7 @@ const StyledButton = styled.button<ButtonProps>`
   }
 `
 
-export const Button = ({text, type='normal', onClick, color = 'primary',}: ButtonProps) => {
+export const Button: React.FC<ButtonProps> = ({text, type='normal', onClick, color = 'primary',}: ButtonProps) => {
     return (
       <StyledButton onClick={onClick} color={color as any | string} type={type as any}>
         {text}
