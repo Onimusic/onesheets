@@ -13,12 +13,22 @@ export const Primary = Template.bind({})
 
 Primary.args = {
     text: 'Primary',
-    type: 'normal'
+    type: 'normal',
+    color: 'primary'
 } as ButtonProps
 
 export const Secondary = Template.bind({})
 
 Secondary.args = {
     text: 'Secondary',
-    type: 'normal'
+    type: 'normal',
+    color: 'secondary'
+} as ButtonProps
+
+export const Success = Template.bind({})
+
+Success.args = {
+    text: 'Success',
+    type: 'normal',
+    color: 'success'
 } as ButtonProps
