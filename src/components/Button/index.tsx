@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 
-interface ButtonProps extends React.HTMLProps<HTMLButtonElement> {
-    text?: string;
-    type?: 'normal' | 'bordered';
-    color?: 'primary' | 'secondary' | 'success' | 'error' | 'warning';
-    onClick?: () => void;
-  }
+type ButtonProps = {
+  text?: string;
+  type?: 'normal' | 'bordered';
+  color?: 'primary' | 'secondary' | 'success' | 'error' | 'warning';
+  onClick?: () => void;
+};
 
 const StyledButton = styled.button<ButtonProps>`
     background-color: ${(props) => {
@@ -92,7 +92,7 @@ const StyledButton = styled.button<ButtonProps>`
   }
 `
 
-export const Button: React.FC<ButtonProps> = ({text, type='normal', onClick, color = 'primary',}: ButtonProps) => {
+export const Button: FC<ButtonProps> = ({ text, type='normal', onClick, color = 'primary',}: ButtonProps) => {
     return (
       <StyledButton onClick={onClick} color={color as any | string} type={type as any}>
         {text}
