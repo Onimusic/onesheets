@@ -1,14 +1,19 @@
 import React, { FC } from 'react';
-import styled from 'styled-components';
+import styled, {DefaultTheme} from 'styled-components';
 
-type ButtonProps = {
+
+export interface ButtonProps extends React.HTMLProps<HTMLButtonElement> {
   text?: string;
   type?: 'normal' | 'bordered';
   color?: 'primary' | 'secondary' | 'success' | 'error' | 'warning';
   onClick?: () => void;
 };
+interface StyledButtonProps {
+  theme: DefaultTheme;
+}
 
-const StyledButton = styled.button<ButtonProps>`
+
+const StyledButton = styled.button<ButtonProps & StyledButtonProps>`
     background-color: ${(props) => {
         if(props.type === 'normal'){
             switch (props.color) {
