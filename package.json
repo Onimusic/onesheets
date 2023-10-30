@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -21,7 +21,8 @@
     "storybook": "start-storybook -p 6006",
     "release": "auto shipit --base-branch=master",
     "build-storybook": "build-storybook",
-    "serve-storybook": "serve storybook-static"
+    "serve-storybook": "serve storybook-static",
+    "deploy": "npm version patch && npm publish"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -52,6 +53,7 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.18.10",
+    "@nextui-org/react": "^1.0.0-beta.12",
     "@size-limit/preset-small-lib": "^8.0.0",
     "@storybook/addon-essentials": "^6.5.10",
     "@storybook/addon-info": "^5.3.21",
@@ -73,6 +75,7 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
+    "@storybook/blocks": "^7.5.2",
     "styled-components": "^6.0.0-rc.1"
   }
 }
