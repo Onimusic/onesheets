@@ -1,4 +1,3 @@
-import { Container } from '@nextui-org/react'
 import React from 'react'
 
 export interface PreviewProps {
@@ -9,11 +8,11 @@ export interface PreviewProps {
 export const Preview = ({ style, children }: PreviewProps) => {
     return (
         <>
-            <Container
+            <div
                 style={style}
             >
                 {children}
-            </Container>
+            </div>
         </>
     )
 }

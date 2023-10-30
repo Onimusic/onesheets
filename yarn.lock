@@ -2125,6 +2125,11 @@
     "schema-utils" "^3.0.0"
     "source-map" "^0.7.3"
 
+"@popperjs/core@^2.11.8":
+  "integrity" "sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A=="
+  "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz"
+  "version" "2.11.8"
+
 "@radix-ui/number@1.0.1":
   "integrity" "sha512-T5gIdVO2mmPW3NNhjNgEP3cqMXjXL9UbO0BzWcXfvdBs+BohbQxvd/K5hSVKmn9/lbTdsQVKbUcP5WLCwvUbBg=="
   "resolved" "https://registry.npmjs.org/@radix-ui/number/-/number-1.0.1.tgz"
@@ -5812,6 +5817,11 @@
   "integrity" "sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww=="
   "resolved" "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz"
   "version" "1.0.0"
+
+"bootstrap@^5.3.2":
+  "integrity" "sha512-D32nmNWiQHo94BKHLmOrdjlL05q1c8oxbtBphQFb9Z5to6eGRDCm0QgeaZ4zFBHzfg2++rqa2JkqCcxDy0sH0g=="
+  "resolved" "https://registry.npmjs.org/bootstrap/-/bootstrap-5.3.2.tgz"
+  "version" "5.3.2"
 
 "bottleneck@^2.15.3":
   "integrity" "sha512-VHiNCbI1lKdl44tGrhNfU3lup0Tj/ZBMJB5/2ZbNXRCPuRCO7ed2mgcK4r17y+KB2EfuYuRaVlwNbAeaWGSpbw=="
