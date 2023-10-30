@@ -20,7 +20,6 @@ interface ElemProps {
 }
 
 export const translateElementToBackendAttributes = (elem: ElemProps) => {
-  console.log("elem na lib:", elem)
   let formattedValue;
   if (elementConfiguration.pipeSeparatedElementTypes.includes(elem.bdType)) {
     formattedValue = `${elem.typeSelected}|${elem.value}`;
@@ -51,7 +50,6 @@ export const translateElementToBackendAttributes = (elem: ElemProps) => {
     }
   }
 
-  console.log({formattedValue})
   return {
     id: elem.bdId || '',
     secondary_color: elem.secondary_color || '#fff',
