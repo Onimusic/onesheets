@@ -50,6 +50,8 @@ export const translateElementToBackendAttributes = (elem: ElemProps) => {
       formattedValue = '';
     }
   }
+
+  console.log({formattedValue})
   return {
     id: elem.bdId || '',
     secondary_color: elem.secondary_color || '#fff',
