@@ -51,18 +51,18 @@ export const translateElementToBackendAttributes = (elem: ElemProps) => {
   }
 
   return {
-    id: elem.bdId || '',
-    secondary_color: elem.secondary_color || '#fff',
+    background: elem.background || '',
+    bdId: elem.bdId || '',
+    effect: elem.effect || '',
     extraContent: elem.extraContent || '',
-    title: elem.title || '',
+    font_color: elem.fontColor || '#000',
+    order: elem.order,
+    page: elem.page,
+    secondary_color: elem.secondary_color || '#fff',
+    show: elem.show,
     subtitle: elem.subtitle || '',
+    title: elem.title || '',
     type: elem.type,
     value: formattedValue || '',
-    background: elem.background || '',
-    effect: elem.effect || '',
-    font_color: elem.fontColor || '#000',
-    show: elem.show,
-    page: elem.page,
-    order: elem.order,
   };
 };
