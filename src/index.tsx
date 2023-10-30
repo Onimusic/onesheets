@@ -17,5 +17,7 @@ export const Thing: FC<Props> = ({ children }) => {
 export * from './components/Button';
 export * from './utils/jorge';
 export * from './utils/isNotEmpty';
+export * from './utils/elementConfiguration';
+export * from './utils/translateElementToBackendAttributes';
 export * from './Layout/Menu';
 export * from './Layout/Preview';

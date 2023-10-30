@@ -1,7 +1,25 @@
 import React from 'react';
 import { elementConfiguration } from './elementConfiguration';
 
-export const translateElementToBackendAttributes = (elem) => {
+interface ElemProps {
+  bdType: string;
+  typeSelected: string[]; // Adicione a propriedade 'typeSelected'
+  value: string | number | object | string[];
+  extraContent: string | number | object | string[];
+  featuredImage: string;
+  bdId: string;
+  secondary_color: string;
+  title: string;
+  subtitle: string;
+  background: string;
+  effect: string;
+  fontColor: string;
+  show: boolean;
+  page: object;
+  order: number;
+}
+
+export const translateElementToBackendAttributes = (elem: ElemProps) => {
   let formattedValue;
   if (elementConfiguration.pipeSeparatedElementTypes.includes(elem.bdType)) {
     formattedValue = `${elem.typeSelected}|${elem.value}`;
