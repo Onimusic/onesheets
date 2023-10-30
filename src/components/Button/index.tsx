@@ -1,5 +1,4 @@
 import React from 'react'
-import {Button as Btn} from '@nextui-org/react'
 
 export interface ButtonProps {
     text?: string;
@@ -9,8 +8,8 @@ export interface ButtonProps {
 
   export function Button({ text, onClick, color = 'primary',}: ButtonProps){
     return (
-      <Btn onClick={onClick} color={color as any | string}>
+      <button onClick={onClick} className={`btn btn-${color as any | string}`}>
         {text}
-      </Btn>
+      </button>
     );
   };
