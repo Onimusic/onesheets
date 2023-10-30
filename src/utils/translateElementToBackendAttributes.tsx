@@ -1,4 +1,3 @@
-import React from 'react';
 import { elementConfiguration } from './elementConfiguration';
 
 interface ElemProps {
