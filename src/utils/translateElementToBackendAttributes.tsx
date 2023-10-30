@@ -55,7 +55,7 @@ export const translateElementToBackendAttributes = (elem: ElemProps) => {
     extraContent: elem.extraContent || '',
     title: elem.title || '',
     subtitle: elem.subtitle || '',
-    type: elem.bdType,
+    type: elem.type,
     value: formattedValue || '',
     background: elem.background || '',
     effect: elem.effect || '',
