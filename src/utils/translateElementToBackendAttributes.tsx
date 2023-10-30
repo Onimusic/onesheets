@@ -20,6 +20,7 @@ interface ElemProps {
 }
 
 export const translateElementToBackendAttributes = (elem: ElemProps) => {
+  console.log("elem na lib:", elem)
   let formattedValue;
   if (elementConfiguration.pipeSeparatedElementTypes.includes(elem.bdType)) {
     formattedValue = `${elem.typeSelected}|${elem.value}`;
