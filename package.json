@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -21,7 +21,8 @@
     "storybook": "start-storybook -p 6006",
     "release": "auto shipit --base-branch=master",
     "build-storybook": "build-storybook",
-    "serve-storybook": "serve storybook-static"
+    "serve-storybook": "serve storybook-static",
+    "deploy": "npm version patch && npm publish"
   },
   "peerDependencies": {
     "react": ">=16"
