@@ -2,6 +2,7 @@ import { elementConfiguration } from './elementConfiguration';
 
 interface ElemProps {
   bdType: string;
+  type: string;
   typeSelected: string[]; // Adicione a propriedade 'typeSelected'
   value: string | number | object | string[];
   extraContent: string | number | object | string[];
