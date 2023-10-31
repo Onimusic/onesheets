@@ -1,4 +1,3 @@
-import React from 'react';
 import { elementConfiguration } from './elementConfiguration';
 
 const transformElements = (element: any, uniqueId: string, mappedElements:any) => {
