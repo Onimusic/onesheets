@@ -1,8 +1,6 @@
 import { elementConfiguration } from './elementConfiguration';
 
-const transformElements = (element: any, uniqueId: string, mappedElements:any) => {
-    const tempElement: any = {};
-
+const transformElements = (tempElement:any, element: any, uniqueId: string, mappedElements:any) => {
     if (elementConfiguration.pipeSeparatedElementTypes.includes(element.type)) {
         const elementTypeAndValue = element.value.split("|");
         tempElement.typeSelected = elementTypeAndValue[0] || "";
