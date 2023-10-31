@@ -1,6 +1,6 @@
 import { elementConfiguration } from './elementConfiguration';
 
-export const transformElements = (tempElement:any, element: any, uniqueId: string, mappedElements:any) => {
+export const transformElements = (tempElement:any, element: any, uniqueId: string, contents:any, mm:boolean, mappedElements:any) => {
     if (elementConfiguration.pipeSeparatedElementTypes.includes(element.type)) {
         const elementTypeAndValue = element.value.split("|");
         tempElement.typeSelected = elementTypeAndValue[0] || "";
@@ -46,7 +46,7 @@ export const transformElements = (tempElement:any, element: any, uniqueId: strin
     tempElement.show = typeof element.show === "boolean" ? element.show : true;
 
     // Adiciona o elemento montado do jeito certo na chave única do objeto que vai para o state elements
-    mappedElements[uniqueId] = tempElement;
+    return mm ? contents.push(tempElement) : mappedElements[uniqueId] = tempElement;
 };
 
 export default transformElements;
