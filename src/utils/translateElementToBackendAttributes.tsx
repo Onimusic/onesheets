@@ -1,22 +1,23 @@
 import { elementConfiguration } from './elementConfiguration';
 
 interface ElemProps {
+  background: string;
+  bdId: string;
   bdType: string;
+  effect: string;
+  extraContent: string | number | object | string[];
+  featuredImage: string;
+  fontColor: string;
+  id: number;
+  order: number;
+  page: object;
+  secondary_color: string;
+  show: boolean;
+  subtitle: string;
+  title: string;
   type: string;
   typeSelected: string[]; // Adicione a propriedade 'typeSelected'
   value: string | number | object | string[];
-  extraContent: string | number | object | string[];
-  featuredImage: string;
-  bdId: string;
-  secondary_color: string;
-  title: string;
-  subtitle: string;
-  background: string;
-  effect: string;
-  fontColor: string;
-  show: boolean;
-  page: object;
-  order: number;
 }
 
 export const translateElementToBackendAttributes = (elem: ElemProps) => {
@@ -53,8 +54,10 @@ export const translateElementToBackendAttributes = (elem: ElemProps) => {
   return {
     background: elem.background || '',
     bdId: elem.bdId || '',
+    bdType: elem.bdType || '',
     effect: elem.effect || '',
     extraContent: elem.extraContent || '',
+    featuredImage: elem.featuredImage || '',
     font_color: elem.fontColor || '#000',
     id: elem.bdId || '',
     order: elem.order,
@@ -64,6 +67,7 @@ export const translateElementToBackendAttributes = (elem: ElemProps) => {
     subtitle: elem.subtitle || '',
     title: elem.title || '',
     type: elem.bdId,
+    typeSelected: elem.typeSelected || '',
     value: formattedValue || '',
   };
 };
