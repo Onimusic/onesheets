@@ -3,7 +3,7 @@
  * @param {number} length tamanho da string
  * @returns {string}
  */
-function makeId(length:number) {
+export const makeId = (length:number) => {
     var result = "";
     var characters =
         "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
