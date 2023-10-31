@@ -66,7 +66,7 @@ export const translateElementToBackendAttributes = (elem: ElemProps) => {
     show: elem.show,
     subtitle: elem.subtitle || '',
     title: elem.title || '',
-    type: elem.bdId,
+    type: elem.bdType,
     typeSelected: elem.typeSelected || '',
     value: formattedValue || '',
   };
