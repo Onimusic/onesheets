@@ -56,6 +56,7 @@ export const translateElementToBackendAttributes = (elem: ElemProps) => {
     effect: elem.effect || '',
     extraContent: elem.extraContent || '',
     font_color: elem.fontColor || '#000',
+    id: elem.bdId || '',
     order: elem.order,
     page: elem.page,
     secondary_color: elem.secondary_color || '#fff',
