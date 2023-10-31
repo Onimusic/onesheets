@@ -18,6 +18,7 @@ export * from './components/Button';
 export * from './utils/isNotEmpty';
 export * from './utils/elementConfiguration';
 export * from './utils/translateElementToBackendAttributes';
+export * from './utils/makeId';
 export * from './utils/transformElements';
 export * from './Layout/Menu';
 export * from './Layout/Preview';
