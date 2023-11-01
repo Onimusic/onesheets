@@ -1,16 +1,16 @@
 import React from 'react'
-import {Button as Btn} from '@nextui-org/react'
 
 export interface ButtonProps {
     text?: string;
     color?: 'primary' | 'secondary' | 'success' | 'error' | 'warning';
+    children: React.ReactNode; 
     onClick?: () => void;
   };
 
-  export function Button({ text, onClick, color = 'primary',}: ButtonProps){
+  export function Button({ children, onClick, color = 'primary',}: ButtonProps){
     return (
-      <Btn onClick={onClick} color={color as any | string}>
-        {text}
-      </Btn>
+      <button onClick={onClick} className={`btn btn-${color as any | string}`}>
+        {children}
+      </button>
     );
   };

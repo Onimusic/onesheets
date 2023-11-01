@@ -1,6 +1,5 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import { Container } from '@nextui-org/react';
 import { Preview, PreviewProps } from '../src/Layout/Preview'; // Importe o seu componente Preview
 
 export default {
@@ -10,7 +9,7 @@ export default {
 
 const Template: React.FC<PreviewProps> = (args) => (
   <Preview {...args}>
-    <Container>Conteúdo do Preview</Container>
+    <div>Conteúdo do Preview</div>
   </Preview>
 );
 

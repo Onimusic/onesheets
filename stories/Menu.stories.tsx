@@ -1,6 +1,5 @@
 import React from 'react';
 import { Meta } from '@storybook/react';
-import { Container } from '@nextui-org/react';
 import { Menu, MenuProps } from '../src/Layout/Menu'; // Importe o seu componente Menu
 
 export default {
@@ -10,7 +9,7 @@ export default {
 
 const Template: React.FC<MenuProps> = (args) => (
   <Menu {...args}>
-    <Container>Conteúdo do Menu</Container>
+    <div>Conteúdo do Menu</div>
   </Menu>
 );
 

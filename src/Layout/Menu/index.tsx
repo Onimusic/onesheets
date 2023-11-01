@@ -1,4 +1,4 @@
-import { Container } from '@nextui-org/react'
+
 import React from 'react'
 
 export interface MenuProps {
@@ -9,11 +9,11 @@ export interface MenuProps {
 export const Menu = ({ style, children }: MenuProps) => {
     return (
         <>
-            <Container
+            <div
                 style={style}
             >
                 {children}
-            </Container>
+            </div>
         </>
     )
 }

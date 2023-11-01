@@ -12,7 +12,7 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args}/>
 export const Primary = Template.bind({})
 
 Primary.args = {
-    text: 'Primary',
+    children: 'Primary',
     type: 'normal',
     color: 'primary'
 } as ButtonProps
@@ -20,7 +20,7 @@ Primary.args = {
 export const Secondary = Template.bind({})
 
 Secondary.args = {
-    text: 'Secondary',
+    children: 'Secondary',
     type: 'normal',
     color: 'secondary'
 } as ButtonProps
@@ -28,7 +28,7 @@ Secondary.args = {
 export const Success = Template.bind({})
 
 Success.args = {
-    text: 'Success',
+    children: 'Success',
     type: 'normal',
     color: 'success'
 } as ButtonProps
