@@ -1,14 +1,14 @@
 /**
- * Gerador de strings aleatório
- * @param {number} length tamanho da string
- * @returns {string}
+ * Gerador de strings aleatórias
+ * @param length - Tamanho da string
+ * @returns Uma string aleatória
  */
-export const makeId = (length:number) => {
-    var result = "";
-    var characters =
+export const makeId = (length: number): string => {
+    let result = "";
+    const characters =
         "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    var charactersLength = characters.length;
-    for (var i = 0; i < length; i++) {
+    const charactersLength = characters.length;
+    for (let i = 0; i < length; i++) {
         result += characters.charAt(
             Math.floor(Math.random() * charactersLength)
         );
