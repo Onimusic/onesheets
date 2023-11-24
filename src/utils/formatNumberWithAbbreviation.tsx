@@ -3,7 +3,7 @@
  * @param {number} number número para formatar
  * @returns {string} número formatado
  */
-function formatNumberWithAbbreviation(number: number) {
+export const formatNumberWithAbbreviation = (number: number) => {
     if (number >= 1000000) {
         return (number / 1000000).toFixed(1) + "M"; // Format as millions
     } else if (number >= 1000) {
