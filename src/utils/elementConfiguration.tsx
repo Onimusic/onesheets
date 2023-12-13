@@ -22,6 +22,8 @@ export const elementConfiguration = {
         "onipages_video-gallery",
         "onipages_news",
         "onipages_featured-numbers",
+        "onipages_external-links",
+        "onipages_files"
     ],
     // Elementos cujo valor é do tipo tipo|valor
     pipeSeparatedElementTypes: ["onipages_spacer", "onipages_link"],
