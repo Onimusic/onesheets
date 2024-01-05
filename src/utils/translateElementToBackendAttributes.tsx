@@ -17,7 +17,7 @@ interface ElemProps {
   title: string;
   type: string;
   typeSelected: string[]; // Adicione a propriedade 'typeSelected'
-  value: string | number | object | string[];
+  value: string | number | object | string[] | object[];
 }
 
 export const translateElementToBackendAttributes = (elem: ElemProps) => {
