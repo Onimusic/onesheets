@@ -6,7 +6,6 @@ export const elementConfiguration = {
         "onipages_link",
         "onipages_spotify",
         "onipages_deezer",
-        "onipages_instagram",
         "onipages_tiktok",
         "onipages_youtube",
         "onipages_twitter",
@@ -23,7 +22,8 @@ export const elementConfiguration = {
         "onipages_news",
         "onipages_featured-numbers",
         "onipages_external-links",
-        "onipages_files"
+        "onipages_files",
+        "onipages_instagram",
     ],
     // Elementos cujo valor é do tipo tipo|valor
     pipeSeparatedElementTypes: ["onipages_spacer", "onipages_link"],
