@@ -51,6 +51,8 @@ export const translateElementToBackendAttributes = (elem: ElemProps) => {
     }
   }
 
+  console.log(elem.title)
+
   return {
     background: elem.background || '',
     bdId: elem.bdId || '',
